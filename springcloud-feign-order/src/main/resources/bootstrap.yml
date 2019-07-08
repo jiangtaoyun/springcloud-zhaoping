@@ -1,0 +1,16 @@
+
+
+spring:
+  application:
+    name: springcloud-feign-order
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: springcloud-config
+
+feign:
+  hystrix:
+      enabled: true
