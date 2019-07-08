@@ -1,0 +1,16 @@
+server:
+  port: 8890
+
+spring:
+  application:
+    name: springcloud-provider-sousuo
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 980917
+    url: jdbc:mysql://192.168.1.140:3306/zhaopin?setUnicode=true&characterEncoding=utf8
+    username: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.140:8761/eureka
+
